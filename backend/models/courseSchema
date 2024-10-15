@@ -1,0 +1,11 @@
+const mongoose=require('mongoose')
+const courseSchema = mongoose.Schema({
+    courseId:String,
+    courseName:String,
+    courseCategory:String,
+    courseDuration:String,
+    courseDescription:String,
+    courseFee:Number
+});
+const courseData=mongoose.model('coursedb',courseSchema)
+module.exports=courseData
